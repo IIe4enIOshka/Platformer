@@ -32,7 +32,7 @@ public class MovementPlayer : MonoBehaviour
         Run();
         Jump();
         Flip();
-        RunAnimation();
+        ChangeAnimation();
     }
 
     private void FixedUpdate()
@@ -48,7 +48,7 @@ public class MovementPlayer : MonoBehaviour
         }
     }
 
-    private void RunAnimation()
+    private void ChangeAnimation()
     {
         _animator.SetBool(AnimatorPlayerController.Params.isGround, !CheckGround());
         _animator.SetFloat(AnimatorPlayerController.Params.VelocityY, _rigidbody2D.velocity.y);

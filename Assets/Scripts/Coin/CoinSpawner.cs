@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CoinSpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject _template;
+    [SerializeField] private Coin _templateCoin;
     [SerializeField] private Transform[] _spawnPoints;
     [SerializeField] private float _waitForSeconds;
     [SerializeField] private int _numberCoins;
@@ -22,8 +22,7 @@ public class CoinSpawner : MonoBehaviour
 
         for (int i = 0; i < _numberCoins; i++)
         {
-            Instantiate(_template, _spawnPoints[_currentPoint]);
-
+            Instantiate(_templateCoin, _spawnPoints[_currentPoint]);
             _currentPoint++;
 
             if (_currentPoint >= _spawnPoints.Length)

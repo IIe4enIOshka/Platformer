@@ -557,7 +557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07ecbeb49db68c44dbb5e2f2a073df8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _template: {fileID: 5629054035822860571, guid: 5ee521b22186d65418c81c3f6ed39e8a,
+  _templateCoin: {fileID: 6988315145688641122, guid: 5ee521b22186d65418c81c3f6ed39e8a,
     type: 3}
   _spawnPoints:
   - {fileID: 1457483769}
